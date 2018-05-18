@@ -76,9 +76,9 @@ function renderRoot() {
           'zh-CN': '我的世界基岩版模组仓库'
         })),
         ce('div.list', async () => {
-          const mods = await (await fetch('/mods/')).json()
+          const mods = await (await fetch('/mods/index.json')).json()
           return mods.list.map(item => ce('div.item', async () => {
-            const info = await (await fetch(`/mods/${item}/`)).json()
+            const info = await (await fetch(`/mods/${item}/index.json`)).json()
             console.log(info)
             return [
               ce('h2', resolveLanguage(info.info).name),
