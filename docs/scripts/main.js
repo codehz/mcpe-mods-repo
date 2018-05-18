@@ -105,7 +105,7 @@ function renderRoot() {
               ]),
               ce('div.links', [
                 ce('a.homepage', linkHref(info.homepage)),
-                ce('a.bugs', linkHref(info.bugs.link)),
+                ce('a.bugs', linkHref(info.bugs.url)),
                 ce('a.bugsEmail', linkHref(`mailto:${info.bugs.email}`)),
               ]),
             ]
