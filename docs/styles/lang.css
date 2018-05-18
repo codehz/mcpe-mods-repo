@@ -1,0 +1,111 @@
+.version::before {
+  content: "Version: "
+}
+
+.zh-CN .version::before {
+  content: "版本："
+}
+
+.author::before {
+  content: "Author: "
+}
+
+.zh-CN .author::before {
+  content: "作者："
+}
+
+.contributors::before {
+  content: "Contributors: "
+}
+
+.zh-CN .contributors::before {
+  content: "合作者："
+}
+
+.description::before {
+  content: "Description: "
+}
+
+.zh-CN .description::before {
+  content: "简介："
+}
+
+.extra_files::before {
+  content: "Extra Files: "
+}
+
+.zh-CN .extra_files::before {
+  content: "额外文件："
+}
+
+.generated_files::before {
+  content: "Generated Files: "
+}
+
+.zh-CN .generated_files::before {
+  content: "生成文件："
+}
+
+.dependencies::before {
+  content: "Dependencies: "
+}
+
+.zh-CN .dependencies::before {
+  content: "依赖："
+}
+
+.keywords::before {
+  content: "Keywords: "
+}
+
+.zh-CN .keywords::before {
+  content: "关键字："
+}
+
+.license::before {
+  content: "License: "
+}
+
+.zh-CN .license::before {
+  content: "协议："
+}
+
+.download::before {
+  content: "Download: "
+}
+
+.zh-CN .download::before {
+  content: "下载："
+}
+
+.links::before {
+  content: "Links: "
+}
+
+.zh-CN .links::before {
+  content: "相关链接："
+}
+
+.homepage::before {
+  content: "Homepage"
+}
+
+.zh-CN .homepage::before {
+  content: "项目主页"
+}
+
+.bugs::before {
+  content: "BUG Report"
+}
+
+.zh-CN .bugs::before {
+  content: "BUG 报告"
+}
+
+.bugsEmail::before {
+  content: "Email"
+}
+
+.zh-CN .bugsEmail::before {
+  content: "邮箱"
+}
