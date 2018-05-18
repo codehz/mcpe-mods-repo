@@ -17,14 +17,15 @@ h1 {
   display: flex;
   justify-content: center;
   padding: 20px;
-  position: fixed;
+  position: sticky;
+  top: 0;
   width: 100%;
   background: white;
   box-shadow: 0 0 15px;
 }
 
 #root > .list {
-  padding-top: 100px;
+  padding-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,6 +42,13 @@ h1 {
   grid-gap: 5px;
   background: rgb(89, 61, 40);
   color: white;
+}
+
+@media (max-width: 900px) {
+  #root > .list > .item {
+    width: 100%;
+    border-radius: 0;
+  }
 }
 
 #root > .list > .item > * {
