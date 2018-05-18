@@ -1,0 +1,50 @@
+{
+  "name": "Welcome Mod",
+  "version": "0.1",
+  "keywords": ["command", "util"],
+  "author": "Code Hz",
+  "contributors": [],
+  "homepage": "https://github.com/codehz/mcpe-mods-dev",
+  "bugs": {
+    "url": "https://github.com/codehz/mcpe-mods-dev/issues",
+    "email": "codehz@outlook.com"
+  },
+  "license": "GPL-3.0-or-later",
+  "main": "mods_welcome.so",
+  "extra_files": [{
+    "name": "readme.md",
+    "info": {
+      "en-US": {
+        "name": "README File"
+      },
+      "zh-CN": {
+        "name": "README 文件"
+      }
+    }
+  }],
+  "generated_files": [{
+    "name": "welcome.json",
+    "info": {
+      "en-US": {
+        "name": "Config file"
+      },
+      "zh-CN": {
+        "name": "配置文件"
+      }
+    }
+  }],
+  "dependencies": {
+    "mcpeserver": ">=0.3.1"
+  },
+  "optionalDependencies": {},
+  "info": {
+    "en-US": {
+      "name": "Welcome Mod",
+      "description": "Automatically execute commands when players log in and log out, You can also set commands for specific players when they joining the server(Warning: It will automatically set OP permissions to CodeHz if you leave it blank)"
+    },
+    "zh-CN": {
+      "name": "欢迎模组",
+      "description": "在玩家加入和退出时自动执行命令，你也可以单独给某个用户设置加入时执行的指令（警告：如果不设置，将会自动给CodeHz op权限，即加入时自动执行\"op CodeHz\"）"
+    }
+  }
+}

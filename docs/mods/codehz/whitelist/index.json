@@ -1,0 +1,58 @@
+{
+  "name": "Whitelist Mod",
+  "version": "0.1",
+  "keywords": ["command", "util"],
+  "author": "Code Hz",
+  "contributors": [],
+  "homepage": "https://github.com/codehz/mcpe-mods-dev",
+  "bugs": {
+    "url": "https://github.com/codehz/mcpe-mods-dev/issues",
+    "email": "codehz@outlook.com"
+  },
+  "license": "GPL-3.0-or-later",
+  "main": "mods_whitelist.so",
+  "extra_files": [{
+    "name": "readme.md",
+    "info": {
+      "en-US": {
+        "name": "README File"
+      },
+      "zh-CN": {
+        "name": "README 文件"
+      }
+    }
+  }],
+  "generated_files": [{
+    "name": "whitelist.txt",
+    "info": {
+      "en-US": {
+        "name": "whitelist file"
+      },
+      "zh-CN": {
+        "name": "白名单文件"
+      }
+    }
+  }, {
+    "name": "whitelist.log",
+    "info": {
+      "en-US": {
+        "name": "Authentication failure log"
+      },
+      "zh-CN": {
+        "name": "鉴权失败日志"
+      }
+    }
+  }],
+  "dependencies": {},
+  "optionalDependencies": {},
+  "info": {
+    "en-US": {
+      "name": "Whitelist mod",
+      "description": "Only allow players in the whitelist to join the game(Warning: it uses the UUID to identify the player, so you should find the corresponding UUID from the log)"
+    },
+    "zh-CN": {
+      "name": "白名单模组",
+      "description": "只允许白名单中的玩家加入游戏（警告：模组使用 UUID 来鉴别玩家，你应该从日志中找到对应的 UUID ）"
+    }
+  }
+}

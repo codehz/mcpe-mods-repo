@@ -1,0 +1,28 @@
+{
+  "name": "Chat Log Mod",
+  "version": "0.1",
+  "keywords": ["chat", "util"],
+  "author": "Code Hz",
+  "contributors": [],
+  "homepage": "https://github.com/codehz/mcpe-mods-dev",
+  "bugs": {
+    "url": "https://github.com/codehz/mcpe-mods-dev/issues",
+    "email": "codehz@outlook.com"
+  },
+  "license": "GPL-3.0-or-later",
+  "main": "mods_chat_log.so",
+  "extra_files": [],
+  "generated_files": [],
+  "dependencies": {},
+  "optionalDependencies": {},
+  "info": {
+    "en-US": {
+      "name": "Chat Log Mod",
+      "description": "Log all player chat into server's console"
+    },
+    "zh-CN": {
+      "name": "聊天日志模组",
+      "description": "在服务器的控制台打印所有玩家的聊天信息"
+    }
+  }
+}
