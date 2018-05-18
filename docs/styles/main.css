@@ -66,9 +66,9 @@ h1 {
   display: none
 }
 
-:active,
-:visited,
-:link {
+a:active,
+a:visited,
+a:link {
   color: greenyellow !important;
   text-decoration: none;
   display: inline;
