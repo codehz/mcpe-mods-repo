@@ -6,11 +6,14 @@
   box-sizing: border-box;
 }
 
+html {
+  background: rgb(143, 174, 254);
+}
+
 #root {
   display: flex;
   flex-direction: column;
   font-family: monospace;
-  background: rgb(143, 174, 254);
 }
 
 h1 {
