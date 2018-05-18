@@ -1,0 +1,5 @@
+localhost:8080
+
+root docs
+gzip
+index index.html index.json
