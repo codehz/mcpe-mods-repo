@@ -36,7 +36,6 @@
   "dependencies": {
     "mcpeserver": ">=0.3.1"
   },
-  "optionalDependencies": {},
   "info": {
     "en-US": {
       "name": "Welcome Mod",

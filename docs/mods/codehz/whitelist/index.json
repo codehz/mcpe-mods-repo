@@ -1,7 +1,7 @@
 {
   "name": "Whitelist Mod",
   "version": "0.1",
-  "keywords": ["command", "util"],
+  "keywords": ["authentication", "util"],
   "author": "Code Hz",
   "contributors": [],
   "homepage": "https://github.com/codehz/mcpe-mods-dev",
@@ -44,7 +44,6 @@
     }
   }],
   "dependencies": {},
-  "optionalDependencies": {},
   "info": {
     "en-US": {
       "name": "Whitelist mod",

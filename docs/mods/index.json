@@ -3,11 +3,6 @@
   "authors": [
     "codehz"
   ],
-  "language-map": {
-    "default": "en-US",
-    "en": "en-US",
-    "zh": "zh-CN"
-  },
   "list": [
     "codehz/chat_log",
     "codehz/welcome",
