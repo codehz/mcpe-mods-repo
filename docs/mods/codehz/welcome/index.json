@@ -13,6 +13,7 @@
   "main": "mods_welcome.so",
   "extra_files": [{
     "name": "readme.md",
+    "gfm": "codehz/mcpe-mods-dev",
     "info": {
       "en-US": {
         "name": "README File"

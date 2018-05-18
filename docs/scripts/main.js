@@ -68,7 +68,15 @@ function markLanguage(el) {
   el.classList.add(navigator.language)
 }
 
+function onClick(fn) {
+  return x => {
+    x.onclick = fn
+    return null;
+  }
+}
+
 function renderRoot() {
+  let preview;
   ce(document.body, markLanguage, body => [
     ce('div#root', [
         ce('h1', resolveLanguage({
@@ -87,7 +95,22 @@ function renderRoot() {
               ce('div.contributors', info.contributors.map(contributor => ce('div', contributor))),
               ce('div.description', resolveLanguage(info.info).description),
               ce('div.extra_files', info.extra_files.map(extra_file => ce('div', [
-                ce('a.name', extra_file.name, linkHref(`/mods/${item}/${extra_file.name}`)),
+                ce('a.name', extra_file.name, linkHref(`/mods/${item}/${extra_file.name}`), !extra_file.gfm ? undefined : onClick(e => {
+                  e.preventDefault();
+                  ce(preview, [
+                    ce('div.title', extra_file.name),
+                    ce('div.close', onClick(() => {
+                      ce(preview, [])
+                    })),
+                    ce('iframe', async frame => {
+                      const content = await (await fetch(`/mods/${item}/${extra_file.name}`)).text()
+                      frame.srcdoc = await (await fetch('https://api.github.com/markdown', {
+                        method: 'POST', body: JSON.stringify({text: content, mode: 'gfm', context: extra_file.gfm})
+                      })).text()
+                      return null
+                    })
+                  ])
+                })),
                 ce('div.info', resolveLanguage(extra_file.info).name)
               ]))),
               ce('div.generated_files', info.generated_files.map(generated_file => ce('div', [
@@ -110,6 +133,10 @@ function renderRoot() {
               ]),
             ]
           }))
+        }),
+        ce('div#preview', x => {
+          preview = x;
+          return null;
         })
       ]
     )
