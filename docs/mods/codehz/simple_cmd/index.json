@@ -1,0 +1,48 @@
+{
+  "name": "Simple Command Mod",
+  "version": "0.1",
+  "keywords": ["command", "util"],
+  "author": "Code Hz",
+  "contributors": [],
+  "homepage": "https://github.com/codehz/mcpe-mods-dev",
+  "bugs": {
+    "url": "https://github.com/codehz/mcpe-mods-dev/issues",
+    "email": "codehz@outlook.com"
+  },
+  "license": "GPL-3.0-or-later",
+  "main": "mods_simple_mod.so",
+  "extra_files": [{
+    "name": "readme.md",
+    "gfm": "codehz/mcpe-mods-dev",
+    "info": {
+      "en-US": {
+        "name": "README File"
+      },
+      "zh-CN": {
+        "name": "README 文件"
+      }
+    }
+  }],
+  "generated_files": [{
+    "name": "simple_cmd.json",
+    "info": {
+      "en-US": {
+        "name": "Config file"
+      },
+      "zh-CN": {
+        "name": "配置文件"
+      }
+    }
+  }],
+  "dependencies": {},
+  "info": {
+    "en-US": {
+      "name": "Simple Command Mod",
+      "description": "Setup up with a simple command with json format config file."
+    },
+    "zh-CN": {
+      "name": "简单命令模组",
+      "description": "设置一个简单的命令通过一个JSON格式的配置文件"
+    }
+  }
+}
