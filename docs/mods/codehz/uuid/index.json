@@ -1,0 +1,27 @@
+{
+  "name": "UUID Mod",
+  "version": "0.1",
+  "keywords": ["command", "util"],
+  "author": "Code Hz",
+  "contributors": [],
+  "homepage": "https://github.com/codehz/mcpe-mods-dev",
+  "bugs": {
+    "url": "https://github.com/codehz/mcpe-mods-dev/issues",
+    "email": "codehz@outlook.com"
+  },
+  "license": "GPL-3.0-or-later",
+  "main": "mods_uuid.so",
+  "extra_files": [],
+  "generated_files": [],
+  "dependencies": {},
+  "info": {
+    "en-US": {
+      "name": "UUID Mod",
+      "description": "Use `/uuid selector` to get uuids."
+    },
+    "zh-CN": {
+      "name": "UUID模组",
+      "description": "使用 `/uuid 选择权` 指令获得对应玩家的 UUID."
+    }
+  }
+}

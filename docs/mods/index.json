@@ -9,6 +9,7 @@
     "codehz/whitelist",
     "codehz/ping",
     "codehz/simple_cmd",
-    "codehz/tellraw"
+    "codehz/tellraw",
+    "codehz/uuid"
   ]
 }
