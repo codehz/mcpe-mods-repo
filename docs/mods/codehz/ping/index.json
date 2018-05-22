@@ -1,7 +1,7 @@
 {
-  "name": "Chat Log Mod",
-  "version": "0.3",
-  "keywords": ["chat", "util"],
+  "name": "Ping Mod",
+  "version": "0.1",
+  "keywords": ["command", "util"],
   "author": "Code Hz",
   "contributors": [],
   "homepage": "https://github.com/codehz/mcpe-mods-dev",
@@ -10,18 +10,14 @@
     "email": "codehz@outlook.com"
   },
   "license": "GPL-3.0-or-later",
-  "main": "mods_chat_log.so",
+  "main": "mods_ping.so",
   "extra_files": [],
   "generated_files": [],
   "dependencies": {},
   "info": {
     "en-US": {
-      "name": "Chat Log Mod",
-      "description": "Log all player chat into server's console"
-    },
-    "zh-CN": {
-      "name": "聊天日志模组",
-      "description": "在服务器的控制台打印所有玩家的聊天信息"
+      "name": "Ping Mod",
+      "description": "Add a ping command to measure delay between client and server"
     }
   }
 }

@@ -6,6 +6,7 @@
   "list": [
     "codehz/chat_log",
     "codehz/welcome",
-    "codehz/whitelist"
+    "codehz/whitelist",
+    "codehz/ping"
   ]
 }
