@@ -27,7 +27,7 @@ Automatically execute commands when players log in and log out, You can also set
 {
   "join": [
     "say 欢迎 {{player}} 来到测试服务器!",
-    "title {{player}} title 这是测试1",
+    "title {{player}} title 这是测试1"
   ],
   "left": [
     "say {{player}} 离开了."
