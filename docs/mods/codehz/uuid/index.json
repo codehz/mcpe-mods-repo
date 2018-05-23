@@ -1,6 +1,6 @@
 {
   "name": "UUID Mod",
-  "version": "0.1",
+  "version": "0.2",
   "keywords": ["command", "util"],
   "author": "Code Hz",
   "contributors": [],
@@ -12,7 +12,17 @@
   "license": "GPL-3.0-or-later",
   "main": "mods_uuid.so",
   "extra_files": [],
-  "generated_files": [],
+  "generated_files": [{
+    "name": "uuid.log",
+    "info": {
+      "en-US": {
+        "name": "UUID Log"
+      },
+      "zh-CN": {
+        "name": "UUID 日志"
+      }
+    }
+  }],
   "dependencies": {},
   "info": {
     "en-US": {
