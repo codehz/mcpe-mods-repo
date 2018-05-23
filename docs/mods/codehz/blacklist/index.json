@@ -1,0 +1,37 @@
+{
+  "name": "Blacklist Mod",
+  "version": "0.1",
+  "keywords": ["command", "util"],
+  "author": "Code Hz",
+  "contributors": [],
+  "homepage": "https://github.com/codehz/mcpe-mods-dev",
+  "bugs": {
+    "url": "https://github.com/codehz/mcpe-mods-dev/issues",
+    "email": "codehz@outlook.com"
+  },
+  "license": "GPL-3.0-or-later",
+  "main": "mods_blacklist.so",
+  "extra_files": [],
+  "generated_files": [{
+    "name": "blacklist.txt",
+    "info": {
+      "en-US": {
+        "name": "Blacklist file"
+      },
+      "zh-CN": {
+        "name": "黑名单文件"
+      }
+    }
+  }],
+  "dependencies": {},
+  "info": {
+    "en-US": {
+      "name": "Blacklist Mod",
+      "description": "Provide /bin /banuuid /kick /pardon commands to manage blacklist."
+    },
+    "zh-CN": {
+      "name": "黑名单模组",
+      "description": "提供 /ban /banuuid /kick /pardon 指令管理黑名单。"
+    }
+  }
+}

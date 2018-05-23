@@ -7,6 +7,7 @@
     "codehz/chat_log",
     "codehz/welcome",
     "codehz/whitelist",
+    "codehz/blacklist",
     "codehz/ping",
     "codehz/simple_cmd",
     "codehz/tellraw",
