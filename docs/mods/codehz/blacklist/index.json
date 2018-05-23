@@ -27,7 +27,7 @@
   "info": {
     "en-US": {
       "name": "Blacklist Mod",
-      "description": "Provide /bin /banuuid /kick /pardon commands to manage blacklist."
+      "description": "Provide /ban /banuuid /kick /pardon commands to manage blacklist."
     },
     "zh-CN": {
       "name": "黑名单模组",
