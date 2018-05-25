@@ -79,66 +79,73 @@ function renderRoot() {
   let preview;
   ce(document.body, markLanguage, body => [
     ce('div#root', [
-        ce('h1', resolveLanguage({
-          'en-US': 'Minecraft Mod Repository',
-          'zh-CN': '我的世界基岩版模组仓库'
+      ce('h1', resolveLanguage({
+        'en-US': 'My Minecraft Bedrock Edition Server Mod Repository',
+        'zh-CN': '我的世界基岩版服务器模组仓库'
+      })),
+      ce('div.list', async () => {
+        const mods = await (await fetch('/mods/index.json')).json()
+        return mods.list.map(item => ce('div.item', async () => {
+          const info = await (await fetch(`/mods/${item}/index.json`)).json()
+          console.log(info)
+          return [
+            ce('h2', resolveLanguage(info.info).name),
+            ce('div.version', info.version),
+            ce('div.author', [ce('a', info.author, linkHref(`/mods/${item.split("/")[0]}`))]),
+            ce('div.contributors', info.contributors.map(contributor => ce('div', contributor))),
+            ce('div.description', resolveLanguage(info.info).description),
+            ce('div.extra_files', info.extra_files.map(extra_file => ce('div', [
+              ce('a.name', extra_file.name, linkHref(`/mods/${item}/${extra_file.name}`), !extra_file.gfm ? undefined : onClick(e => {
+                e.preventDefault();
+                ce(preview, [
+                  ce('div.title', extra_file.name),
+                  ce('div.close', onClick(() => {
+                    ce(preview, [])
+                  })),
+                  ce('iframe', async frame => {
+                    const content = await (await fetch(`/mods/${item}/${extra_file.name}`)).text()
+                    frame.srcdoc = await (await fetch('https://api.github.com/markdown', {
+                      method: 'POST', body: JSON.stringify({ text: content, mode: 'gfm', context: extra_file.gfm })
+                    })).text()
+                    return null
+                  })
+                ])
+              })),
+              ce('div.info', resolveLanguage(extra_file.info).name)
+            ]))),
+            ce('div.generated_files', info.generated_files.map(generated_file => ce('div', [
+              ce('div.name', generated_file.name),
+              ce('div.info', resolveLanguage(generated_file.info).name)
+            ]))),
+            ce('div.dependencies', Object.entries(info.dependencies).map(([key, value]) => ce('div', [
+              ce('span.key', key),
+              ce('span.value', value),
+            ]))),
+            ce('div.keywords', info.keywords.map(word => ce('span', word))),
+            ce('div.license', info.license),
+            ce('div.download', [
+              ce('a.main', info.main, downloadableLink(info.main), linkHref(`/mods/${item}/${info.main}`))
+            ]),
+            ce('div.links', [
+              ce('a.homepage', linkHref(info.homepage)),
+              ce('a.bugs', linkHref(info.bugs.url)),
+              ce('a.bugsEmail', linkHref(`mailto:${info.bugs.email}`)),
+            ]),
+          ]
+        }))
+      }),
+      ce('div#preview', x => {
+        preview = x;
+        return null;
+      }),
+      ce('footer', [
+        ce('p', resolveLanguage({
+          'en-US': "Wants to host your Minecraft BE Server? Please click the link below.",
+          'zh-CN': "想要运行自己的我的世界基岩版服务器？请点击如下链接："
         })),
-        ce('div.list', async () => {
-          const mods = await (await fetch('/mods/index.json')).json()
-          return mods.list.map(item => ce('div.item', async () => {
-            const info = await (await fetch(`/mods/${item}/index.json`)).json()
-            console.log(info)
-            return [
-              ce('h2', resolveLanguage(info.info).name),
-              ce('div.version', info.version),
-              ce('div.author', [ce('a', info.author, linkHref(`/mods/${item.split("/")[0]}`))]),
-              ce('div.contributors', info.contributors.map(contributor => ce('div', contributor))),
-              ce('div.description', resolveLanguage(info.info).description),
-              ce('div.extra_files', info.extra_files.map(extra_file => ce('div', [
-                ce('a.name', extra_file.name, linkHref(`/mods/${item}/${extra_file.name}`), !extra_file.gfm ? undefined : onClick(e => {
-                  e.preventDefault();
-                  ce(preview, [
-                    ce('div.title', extra_file.name),
-                    ce('div.close', onClick(() => {
-                      ce(preview, [])
-                    })),
-                    ce('iframe', async frame => {
-                      const content = await (await fetch(`/mods/${item}/${extra_file.name}`)).text()
-                      frame.srcdoc = await (await fetch('https://api.github.com/markdown', {
-                        method: 'POST', body: JSON.stringify({text: content, mode: 'gfm', context: extra_file.gfm})
-                      })).text()
-                      return null
-                    })
-                  ])
-                })),
-                ce('div.info', resolveLanguage(extra_file.info).name)
-              ]))),
-              ce('div.generated_files', info.generated_files.map(generated_file => ce('div', [
-                ce('div.name', generated_file.name),
-                ce('div.info', resolveLanguage(generated_file.info).name)
-              ]))),
-              ce('div.dependencies', Object.entries(info.dependencies).map(([key, value]) => ce('div', [
-                ce('span.key', key),
-                ce('span.value', value),
-              ]))),
-              ce('div.keywords', info.keywords.map(word => ce('span', word))),
-              ce('div.license', info.license),
-              ce('div.download', [
-                ce('a.main', info.main, downloadableLink(info.main), linkHref(`/mods/${item}/${info.main}`))
-              ]),
-              ce('div.links', [
-                ce('a.homepage', linkHref(info.homepage)),
-                ce('a.bugs', linkHref(info.bugs.url)),
-                ce('a.bugsEmail', linkHref(`mailto:${info.bugs.email}`)),
-              ]),
-            ]
-          }))
-        }),
-        ce('div#preview', x => {
-          preview = x;
-          return null;
-        })
-      ]
+        ce('a', linkHref('https://github.com/codehz/mcpeserver'), 'mcpeserver')
+      ])
+    ]
     )
   ])
 }
