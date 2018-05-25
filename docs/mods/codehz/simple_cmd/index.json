@@ -10,7 +10,7 @@
     "email": "codehz@outlook.com"
   },
   "license": "GPL-3.0-or-later",
-  "main": "mods_simple_mod.so",
+  "main": "mods_simple_cmd.so",
   "extra_files": [{
     "name": "readme.md",
     "gfm": "codehz/mcpe-mods-dev",
