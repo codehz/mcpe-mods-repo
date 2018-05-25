@@ -1,6 +1,6 @@
 {
   "name": "Blacklist Mod",
-  "version": "0.1",
+  "version": "0.2",
   "keywords": ["command", "util"],
   "author": "Code Hz",
   "contributors": [],
@@ -27,11 +27,11 @@
   "info": {
     "en-US": {
       "name": "Blacklist Mod",
-      "description": "Provide /ban /banuuid /kick /pardon commands to manage blacklist."
+      "description": "Provide /ban /banuuid /kick /pardon /blacklist commands to manage blacklist."
     },
     "zh-CN": {
       "name": "黑名单模组",
-      "description": "提供 /ban /banuuid /kick /pardon 指令管理黑名单。"
+      "description": "提供 /ban /banuuid /kick /pardon /blacklist 指令管理黑名单。"
     }
   }
 }
