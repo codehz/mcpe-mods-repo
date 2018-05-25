@@ -12,6 +12,7 @@
     "codehz/simple_cmd",
     "codehz/tellraw",
     "codehz/uuid",
-    "codehz/spam_detector"
+    "codehz/spam_detector",
+    "codehz/chest_lock"
   ]
 }

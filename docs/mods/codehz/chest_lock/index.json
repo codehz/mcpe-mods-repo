@@ -1,0 +1,27 @@
+{
+  "name": "Chest Lock Mod",
+  "version": "0.1",
+  "keywords": ["chest", "secure"],
+  "author": "Code Hz",
+  "contributors": [],
+  "homepage": "https://github.com/codehz/mcpe-mods-dev",
+  "bugs": {
+    "url": "https://github.com/codehz/mcpe-mods-dev/issues",
+    "email": "codehz@outlook.com"
+  },
+  "license": "GPL-3.0-or-later",
+  "main": "mods_chest_lock.so",
+  "extra_files": [],
+  "generated_files": [],
+  "dependencies": {},
+  "info": {
+    "en-US": {
+      "name": "Chest Lock Mod",
+      "description": "Lock chest by naming \"Lock:\" followed by password, then you can only open or destroy it by the item named as the password."
+    },
+    "zh-CN": {
+      "name": "锁箱模组",
+      "description": "通过给箱子命名为 \"Lock:密码\" 的形式来锁定箱子，你只能手持命名为对应密码的物品打开或者摧毁箱子。"
+    }
+  }
+}
