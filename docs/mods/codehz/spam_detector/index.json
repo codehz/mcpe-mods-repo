@@ -1,0 +1,50 @@
+{
+  "name": "Spam Detector",
+  "version": "0.1",
+  "keywords": ["command", "util"],
+  "author": "Code Hz",
+  "contributors": [],
+  "homepage": "https://github.com/codehz/mcpe-mods-dev",
+  "bugs": {
+    "url": "https://github.com/codehz/mcpe-mods-dev/issues",
+    "email": "codehz@outlook.com"
+  },
+  "license": "GPL-3.0-or-later",
+  "main": "mods_spam_detector.so",
+  "extra_files": [{
+    "name": "readme.md",
+    "gfm": "codehz/mcpe-mods-dev",
+    "info": {
+      "en-US": {
+        "name": "README File"
+      },
+      "zh-CN": {
+        "name": "README 文件"
+      }
+    }
+  }],
+  "generated_files": [{
+    "name": "spam_detector.json",
+    "info": {
+      "en-US": {
+        "name": "Config file"
+      },
+      "zh-CN": {
+        "name": "配置文件"
+      }
+    }
+  }],
+  "dependencies": {
+    "mcpeserver": ">=0.3.1"
+  },
+  "info": {
+    "en-US": {
+      "name": "Spam Detector",
+      "description": "Configurable automatic spam detection."
+    },
+    "zh-CN": {
+      "name": "刷屏检测",
+      "description": "可配置的自动刷屏检测。"
+    }
+  }
+}
