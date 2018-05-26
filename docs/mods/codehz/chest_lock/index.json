@@ -1,6 +1,6 @@
 {
-  "name": "Chest Lock Mod",
-  "version": "0.1",
+  "name": "Shulker Box Lock Mod",
+  "version": "0.2",
   "keywords": ["chest", "secure"],
   "author": "Code Hz",
   "contributors": [],
@@ -16,11 +16,11 @@
   "dependencies": {},
   "info": {
     "en-US": {
-      "name": "Chest Lock Mod",
+      "name": "Shulker Box Mod",
       "description": "Lock chest by naming \"Lock:\" followed by password, then you can only open or destroy it by the item named as the password."
     },
     "zh-CN": {
-      "name": "锁箱模组",
+      "name": "潜匿之贝箱子锁定模组",
       "description": "通过给箱子命名为 \"Lock:密码\" 的形式来锁定箱子，你只能手持命名为对应密码的物品打开或者摧毁箱子。"
     }
   }
