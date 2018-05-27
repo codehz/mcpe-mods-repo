@@ -13,6 +13,7 @@
     "codehz/tellraw",
     "codehz/uuid",
     "codehz/spam_detector",
-    "codehz/chest_lock"
+    "codehz/chest_lock",
+    "codehz/dragon_fight"
   ]
 }
