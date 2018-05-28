@@ -1,0 +1,27 @@
+{
+  "name": "Spawn Protection Mod",
+  "version": "0.1",
+  "keywords": ["command", "util"],
+  "author": "Code Hz",
+  "contributors": [],
+  "homepage": "https://github.com/codehz/mcpe-mods-dev",
+  "bugs": {
+    "url": "https://github.com/codehz/mcpe-mods-dev/issues",
+    "email": "codehz@outlook.com"
+  },
+  "license": "GPL-3.0-or-later",
+  "main": "mods_spawn_protection.so",
+  "extra_files": [],
+  "generated_files": [],
+  "dependencies": {},
+  "info": {
+    "en-US": {
+      "name": "Spawn Protection Mod",
+      "description": "Config: spawn-radius and spawn-protect-msg in server.properties"
+    },
+    "zh-CN": {
+      "name": "出生点保护模组",
+      "description": "配置方法：spawn-radius 和 spawn-protect-msg 在 server.properties"
+    }
+  }
+}
