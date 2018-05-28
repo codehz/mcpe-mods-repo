@@ -165,9 +165,7 @@ function renderRoot() {
                 ce('a.bugsEmail', linkHref(`mailto:${info.bugs.email}`)),
               ]),
             ]
-          }, resizeGridItem, x => {
-            console.log(x, items.push(x));
-          })]))
+          }, resizeGridItem, x => items.push(x))]))
       }),
       ce('div#preview', x => {
         preview = x;
