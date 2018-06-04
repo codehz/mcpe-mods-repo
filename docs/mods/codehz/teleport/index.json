@@ -1,0 +1,30 @@
+{
+  "name": "Teleport Mod",
+  "version": "0.1",
+  "keywords": ["command", "util"],
+  "author": "Code Hz",
+  "contributors": [],
+  "homepage": "https://github.com/codehz/mcpe-mods-dev",
+  "bugs": {
+    "url": "https://github.com/codehz/mcpe-mods-dev/issues",
+    "email": "codehz@outlook.com"
+  },
+  "license": "GPL-3.0-or-later",
+  "main": "mods_teleport.so",
+  "extra_files": [],
+  "generated_files": [],
+  "dependencies": {
+    "libplayer_support": ">=0.1",
+    "libform_support": ">=0.1"
+  },
+  "info": {
+    "en-US": {
+      "name": "Teleport Mod",
+      "description": "Add /home /spawn /tpa /tpblacklist command"
+    },
+    "zh-CN": {
+      "name": "传送模组",
+      "description": "添加 /home /spawn /tpa /tpblacklist 命令"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Library for Form",
+  "version": "0.1",
+  "keywords": ["lib"],
+  "author": "Code Hz",
+  "contributors": [],
+  "homepage": "https://github.com/codehz/mcpe-mods-dev",
+  "bugs": {
+    "url": "https://github.com/codehz/mcpe-mods-dev/issues",
+    "email": "codehz@outlook.com"
+  },
+  "license": "GPL-3.0-or-later",
+  "main": "libform_support.so",
+  "extra_files": [],
+  "generated_files": [],
+  "dependencies": {},
+  "info": {
+    "en-US": {
+      "name": "Library for form",
+      "description": "Shared code for form"
+    },
+    "zh-CN": {
+      "name": "表单支持库",
+      "description": "表单相关的支持库"
+    }
+  }
+}

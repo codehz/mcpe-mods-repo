@@ -15,6 +15,10 @@
     "codehz/spam_detector",
     "codehz/chest_lock",
     "codehz/dragon_fight",
-    "codehz/spawn_protection"
+    "codehz/spawn_protection",
+    "codehz/dialog",
+    "codehz/teleport",
+    "codehz/libplayer_support",
+    "codehz/libform_support"
   ]
 }

@@ -1,0 +1,30 @@
+{
+  "name": "Dialog Mod",
+  "version": "0.1",
+  "keywords": ["command", "test"],
+  "author": "Code Hz",
+  "contributors": [],
+  "homepage": "https://github.com/codehz/mcpe-mods-dev",
+  "bugs": {
+    "url": "https://github.com/codehz/mcpe-mods-dev/issues",
+    "email": "codehz@outlook.com"
+  },
+  "license": "GPL-3.0-or-later",
+  "main": "mods_dialog.so",
+  "extra_files": [],
+  "generated_files": [],
+  "dependencies": {
+    "libplayer_support": ">=0.1",
+    "libform_support": ">=0.1"
+  },
+  "info": {
+    "en-US": {
+      "name": "Dialog Test",
+      "description": "Just a test for dialog"
+    },
+    "zh-CN": {
+      "name": "对话框测试",
+      "description": "只是一个对话框测试"
+    }
+  }
+}

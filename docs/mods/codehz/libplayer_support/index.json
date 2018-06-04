@@ -1,0 +1,27 @@
+{
+  "name": "Library for player",
+  "version": "0.1",
+  "keywords": ["lib"],
+  "author": "Code Hz",
+  "contributors": [],
+  "homepage": "https://github.com/codehz/mcpe-mods-dev",
+  "bugs": {
+    "url": "https://github.com/codehz/mcpe-mods-dev/issues",
+    "email": "codehz@outlook.com"
+  },
+  "license": "GPL-3.0-or-later",
+  "main": "libplayer_support.so",
+  "extra_files": [],
+  "generated_files": [],
+  "dependencies": {},
+  "info": {
+    "en-US": {
+      "name": "Library for player",
+      "description": "Shared code for player action"
+    },
+    "zh-CN": {
+      "name": "玩家支持库",
+      "description": "玩家相关的支持库"
+    }
+  }
+}
