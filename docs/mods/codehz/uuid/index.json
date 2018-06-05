@@ -23,7 +23,9 @@
       }
     }
   }],
-  "dependencies": {},
+  "dependencies": {
+    "libplayer_support": ">= 0.1"
+  },
   "info": {
     "en-US": {
       "name": "UUID Mod",
